@@ -1,7 +1,6 @@
 # BD Hijri Date API
 
-This is a simple API to fetch the Hijri (Islamic) date for a given Gregorian date based on moon sighting in Bangladesh, as per the Islamic Foundation Bangladesh. The API changes the Hijri date at Maghrib time according to Bangladesh time and returns the corresponding Hijri date for the provided Gregorian date.
-
+This is a simple API to fetch the Hijri (Islamic) date for a given Gregorian date based on moon sighting in Bangladesh, as per the Islamic Foundation Bangladesh.
 ## How to Use the API
 
 ### Endpoint
