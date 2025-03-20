@@ -5,20 +5,20 @@ This is a simple API to fetch the Hijri (Islamic) date for a given Gregorian dat
 
 ### Endpoint
 - Base URL:  
-  `https://bd-hijri-dates.mail-d0c.workers.dev/`
+  `https://bd-hijri-dates.qomar.workers.dev/`
 
 ### Request Format
 To get the Hijri date for a specific Gregorian date, you can make a request with the following format:
 
 ```
-https://bd-hijri-dates.mail-d0c.workers.dev/?date=DD-MM-YYYY
+https://bd-hijri-dates.qomar.workers.dev/?date=DD-MM-YYYY
 ```
 
 ### Example
 For example, if you want to get the Hijri date for March 10, 2025, your request will look like this:
 
 ```
-https://bd-hijri-dates.mail-d0c.workers.dev/?date=10-03-2025
+https://bd-hijri-dates.qomar.workers.dev/?date=10-03-2025
 ```
 
 ### Response
