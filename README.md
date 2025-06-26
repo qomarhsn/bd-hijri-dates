@@ -53,6 +53,9 @@ GET /?date=DD-MM-YYYY
    * New months are added following announcements by the Islamic Foundation Bangladesh
    * Updates typically occur before each new Islamic month
    * The GitHub repository is automatically synced with the API
+4. **Date Mapping**:
+   
+   While the Hijri date changes at sunset and the Gregorian date at midnight, this API aligns each Hijri date with the corresponding Gregorian calendar day for simplicity and consistency. As a result, even if a new Hijri date technically begins after sunset, the API will continue to display the previous Hijri date until midnight of the next Gregorian day.
 
 ## Support
 
