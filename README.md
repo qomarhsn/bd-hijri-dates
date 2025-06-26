@@ -1,28 +1,41 @@
 # BD Hijri Date API
 
-This is a simple API to fetch the Hijri (Islamic) date for a given Gregorian date based on moon sighting in Bangladesh, as per the Islamic Foundation Bangladesh.
-## How to Use the API
+This API provides official Hijri (Islamic) dates based on moon sightings in Bangladesh, as determined by the Islamic Foundation Bangladesh. It allows conversion of any Gregorian date from January 2025 onward to the corresponding Hijri date.
 
-### Endpoint
-- Base URL:  
-  `https://bd-hijri-dates.qomar.workers.dev/`
-
-### Request Format
-To get the Hijri date for a specific Gregorian date, you can make a request with the following format:
+## Base URL
 
 ```
-https://bd-hijri-dates.qomar.workers.dev/?date=DD-MM-YYYY
+https://bd-hijri-dates.qomarhsn.com
 ```
 
-### Example
-For example, if you want to get the Hijri date for March 10, 2025, your request will look like this:
+## API Usage
+
+### Get Hijri Date
 
 ```
-https://bd-hijri-dates.qomar.workers.dev/?date=10-03-2025
+GET /?date=DD-MM-YYYY
 ```
 
-### Response
-The API will return a JSON response with the Gregorian date and the corresponding Hijri date:
+**Parameters**:
+
+* `date` (optional): A Gregorian date in `DD-MM-YYYY` format.
+  If omitted, the API returns today's date.
+
+**Examples**:
+
+1. Get today’s Hijri date:
+
+   ```
+   https://bd-hijri-dates.qomarhsn.com
+   ```
+
+2. Get the Hijri date for March 10, 2025:
+
+   ```
+   https://bd-hijri-dates.qomarhsn.com/?date=10-03-2025
+   ```
+
+**Response**:
 
 ```json
 {
@@ -31,11 +44,22 @@ The API will return a JSON response with the Gregorian date and the correspondin
 }
 ```
 
-### Notes
-- The `date` parameter in the query string should follow the format `DD-MM-YYYY`.
-- The Hijri date will be updated based on moon sighting each month according to Bangladesh's local time.
-- Currently, this API only has the Hijri dates for March 2025. Dates for January and February 2025 will be added, and all future months will be updated as they come.
+## Notes
+
+1. **Date Format**: Always use the `DD-MM-YYYY` format (e.g., `01-01-2025`)
+2. **Supported Range**: Only dates from January 2025 onward are supported
+3. **Data Updates**:
+
+   * New months are added following announcements by the Islamic Foundation Bangladesh
+   * Updates typically occur before each new Islamic month
+   * The GitHub repository is automatically synced with the API
+
+## Support
+
+For support or to contribute:
+
+* Start a discussion at [GitHub Discussions](https://github.com/qomarhsn/bd-hijri-dates/discussions)
 
 ## License
 
-This project is open-source and available under the [GPLV3](LICENSE).
+All data is available under the [GPLv3 License](LICENSE).
